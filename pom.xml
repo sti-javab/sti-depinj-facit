@@ -21,4 +21,14 @@
         <module>sti-depinj-facit-unittest</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-depinj-facit-domain</artifactId>
+                <version>${version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>

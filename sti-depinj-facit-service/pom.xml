@@ -13,4 +13,10 @@
     <artifactId>sti-depinj-facit-service</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-depinj-facit-domain</artifactId>
+        </dependency>
+    </dependencies>
 </project>

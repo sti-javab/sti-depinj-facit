@@ -5,10 +5,10 @@
                 http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="facitService" class="sti.depinj.facit.service.ServiceImplFullName" />
-
     <!--
-    <bean id="facitService" class="sti.depinj.facit.service.ServiceImplGivenName" />
+    <bean id="facitService" class="sti.depinj.facit.service.ServiceImplFullName" />
     -->
+
+    <bean id="facitService" class="sti.depinj.facit.service.ServiceImplGivenName" />
 
 </beans>

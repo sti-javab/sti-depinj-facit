@@ -11,6 +11,7 @@ import java.util.List;
 public class TestService {
 
     private static final String NASIR_TEDROS = "Nasir Tedros";
+    private static final String LULIYA = "Luliya";
 
     ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:sti-depinj-facit-service.xml");
 
@@ -19,6 +20,7 @@ public class TestService {
     @Test
     public void testServiceDependencyInjection(){
         List<String> studentNames = facitService.getStudents();
-        Assert.assertEquals(NASIR_TEDROS, studentNames.get(0));
+        Assert.assertEquals(LULIYA, studentNames.get(2));
     }
+
 }

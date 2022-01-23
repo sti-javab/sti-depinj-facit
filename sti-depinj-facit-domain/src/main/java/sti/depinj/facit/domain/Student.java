@@ -1,5 +1,7 @@
 package sti.depinj.facit.domain;
 
+import java.util.Objects;
+
 public class Student {
 
     private String givenName;
@@ -7,8 +9,8 @@ public class Student {
     private String surName;
 
     public Student(String givenName, String surName) {
-        this.givenName = givenName;
-        this.surName = surName;
+        this.givenName = Objects.requireNonNull(givenName);
+        this.surName = Objects.requireNonNull(surName);
     }
 
     public String getGivenName() {
@@ -25,5 +27,10 @@ public class Student {
 
     public void setSurName(String surName) {
         this.surName = surName;
+    }
+
+    @Override
+    public String toString(){
+        return givenName + " " + surName;
     }
 }

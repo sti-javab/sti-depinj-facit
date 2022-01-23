@@ -23,9 +23,17 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- project -->
             <dependency>
                 <groupId>se.sti</groupId>
                 <artifactId>sti-depinj-facit-domain</artifactId>
+                <version>${version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-depinj-facit-service</artifactId>
                 <version>${version}</version>
             </dependency>
         </dependencies>

@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface FacitService {
 
-    List<Student> getStudents();
+    List<String> getStudents();
 
 }
